@@ -1,3 +1,11 @@
+#!/bin/bash
+
+#$1=='read1'
+#$2=='read2'
+#$3=='prefix'
+
+
+cd ~/Documents/FOSsequencing/set2/
 
 ### align reads using bowtie2
 bowtie2 -p 2 -x ../TAIR10ref/TAIR10 -1  $1 -2 $2 > $3.sam
